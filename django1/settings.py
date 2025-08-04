@@ -28,7 +28,7 @@ SECRET_KEY = "django-insecure-=r9d-w(54(-i%k5-+5c=8hb)*j5b%5oqmc%4tpst^7nj@&wkl2
 # Debug com False significa que está em modo produção (aplicação pronta para uso)
 DEBUG = False
 
-ALLOWED_HOSTS = ['django1-ph3551-adc7a14a33ab.herokuapp.com/']
+ALLOWED_HOSTS = ['django1-ph3551-adc7a14a33ab.herokuapp.com']
 
 
 # Application definition
