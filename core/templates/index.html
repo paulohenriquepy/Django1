@@ -7,28 +7,30 @@
     <link rel="stylesheet" href="{% static 'css/estilos.css' %}">
 </head>
 <body>
-    <div style="text-align: center;">
+    <div class="main-container">
         <h1>Nature Herbal Shop</h1>
         <img src="{% static 'images/erva.jpg' %}" class="center" />
         <h2>{{ Class }}</h2>
         <p>{{ Other }}</p>
 
-        <table>
-            <thead>
-                <tr>
-                    <th>Product</th>
-                    <th>Price</th>
-                </tr>
-            </thead>
-            <tbody>
-                {% for product in products %}
-                <tr>
-                    <td><a href="{% url 'product' product.id %}">{{ product.name }}</a></td>
-                    <td>{{ product.price }}</td>
-                </tr>
-                {% endfor %}
-            </tbody>
-        </table>
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Product</th>
+                        <th>Price</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for product in products %}
+                    <tr>
+                        <td><a href="{% url 'product' product.id %}">{{ product.name }}</a></td>
+                        <td>{{ product.price }}</td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
 
         <button onclick="teste();">Click on here</button>
         <script type="text/javascript" src="{% static 'js/script.js' %}"></script>

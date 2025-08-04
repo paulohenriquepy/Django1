@@ -9,7 +9,20 @@ a {
    color: #ffffff;
 }
 
-table {
-    margin: 0 auto;
+.table-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
 }
 
+table {
+    border-collapse: collapse;
+}
+
+.main-container {
+    text-align: center;
+}
+
+button {
+    margin-top: 20px;
+}
